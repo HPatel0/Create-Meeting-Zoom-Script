@@ -29,7 +29,6 @@ def getUsers():
                'content-type': 'application/json'}
 
     r = requests.get('https://api.zoom.us/v2/users/', headers=headers)
-    print("\n fetching zoom meeting info now of the user ... \n")
     print(r.text)
 
 
@@ -56,10 +55,9 @@ def createMeeting():
                'content-type': 'application/json'}
     r = requests.post(
         f'https://api.zoom.us/v2/users/{userId}/meetings', headers=headers, data=json.dumps(meetingdetails))
-
-    print("\n creating zoom meeting ... \n")
     print(r.text)
 
 getUsers()
 createMeeting()
+print("------------------------------------")
 print("Successful creation of zoom meeting!")
