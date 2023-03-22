@@ -35,7 +35,7 @@ def getUsers():
 
 meetingdetails = {"topic": "test for python zoom script",
                   "type": 2,
-                  "duration": "45",
+                  "duration": "40",
                   "timezone": "America/New_York",
                   "agenda": "test",
                   "recurrence": {"type": 1,
